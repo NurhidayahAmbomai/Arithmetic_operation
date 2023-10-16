@@ -9,3 +9,10 @@ def substraction(x,y)
     x - y
 end
 
+def multiply(x,y)
+    x * y
+end
+
+def div(x,y)
+    x / y
+end
