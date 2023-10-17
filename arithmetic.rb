@@ -10,24 +10,29 @@ def multiply(x, y)
     x * y
 end
 
-def division(x, y)
-    x / y
+def divide(x, y)
+    result = x.to_f / y.to_f
+    rounded_result = result.round(2)
+    rounded_result
 end
 
-puts "Hello welcome to this arithmetic_operation program \nPuts your name"
+puts "Hello welcome to this arithmetic operation program"
+
+puts "Enter your name"
 name = gets.chomp
 
-puts "Thank you for choosing our program #{name}"
+puts "Thank you for choosing our program, #{name}"
 
-puts "Enter first number"
+puts "\nEnter your first number"
 first = gets.chomp.to_i
 
-puts "Enter second number"
+puts "\nEnter your second number"
 second = gets.chomp.to_i
 
-puts "Select arithmetic operation"
-puts "1. Addition \t2. Substraction \n3. Multiply \t4. Division"
+puts "\nSelect arithmetic operation"
+puts "\n1. Addition \t2. Substraction \n3. Multiplication  \t4. Division"
 operation = gets.chomp.to_i
+
 result = case operation
 when 1
     add(first, second)
@@ -36,7 +41,7 @@ when 2
 when 3
     multiply(first, second)
 when 4
-    division(first, second)
+    divide(first.to_i, second.to_i)
 else 
     "Invalid operation"
 end
