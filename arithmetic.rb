@@ -1,18 +1,2 @@
 puts "Hello whats your name?"
 name = gets.chomp
-
-def add(x,y)
-    x + y
-end
-
-def substract(x,y)
-    x - y
-end
-
-def multiply(x,y)
-    x * y
-end
-
-def division(x,y)
-    x / y
-end
